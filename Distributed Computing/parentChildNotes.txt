@@ -1,0 +1,10 @@
+parentChild -
+
+fork() - creates a child process and returns to the parent the child process id and returns to the child zero
+wait(0) - parent waits for its child
+
+pid=fork() - After the execution of this line, two processes execute the rest of the program. On teh fork all the variables will be duplicated. Therefore the parent has its own variable locations and so is the child. The function fork creates a child process. It returns 0 to the child, and the childs pid to the parent.
+
+ThreeChild - 
+
+On the first iteration since the value of pid is 1 the if-part of the conditioanl statement executes: pid = fork(). This system call creates a child process. All the variables are duplicated. The value of hte variable: pid of the child would be zero and the value of the variable pid of hte parent would be non-zero. On the second and the third iterations the process with variable pid non-zero(which is the parent) executes the if part of the conditional statement. The second for statement makes the parent wait for the three children to reach this point. 

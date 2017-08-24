@@ -1,0 +1,14 @@
+Threads
+
+-Processes with very little private memory are called threads or light-weight processes. At a minimum, each thread needs a program counter and a place in memory for its stack. 
+
+-Two ways to create threads in Java, by Java class:Thread and by Java interface: Runnable. The Java class:Thread also implements the interface: Runnable.
+
+Runnable:
+
+public interface Runnable {
+  public abstract void run();
+}
+
+This means to create a thread we need to implement the method: run()
+
